@@ -9,9 +9,8 @@ body
 }
 .intoname
 {
-	
 	position:relative;
-	margin-top:-130px;
+	margin-top:-10%;
 	color:#FFF;
 	font-size:41px;
 	font-weight:bold;
