@@ -1,0 +1,106 @@
+*{
+	margin:0;
+	padding:0;
+}
+body{
+	font-family:Helvetica, sans-serif;
+	font-size:16px;
+	color:#fff;
+	width:100%;
+	left:-1px;
+	right:-1px;
+}
+.logo
+{
+	height:90px;
+	width:90px;
+	margin-left:30px;
+	margin-top:15px;
+	text-shadow: 1px 1px 25px rgba(153, 230, 255, 1);
+
+
+}
+
+.logoname
+{
+	font-size:42px;
+	margin-top:-80px;
+	color:#F3F3F3;
+	margin-left:130px;
+	font-family:Verdana, Geneva, sans-serif;
+	letter-spacing:1px;
+	font-weight:bold;
+	width:350px;
+    text-shadow: 1px 1px 25px rgba(153, 230, 255, 1);
+
+	
+}
+.name
+{
+	height:100px;
+	width:270px;
+	margin-left:10px;
+}
+.slogal
+{
+	margin-top:0px;
+	margin-left:108px;
+	margin-bottom:100px;
+	width:300px;
+	letter-spacing:1px;
+	text-align:center;
+	height:20px;
+	color:#FFF;
+
+}
+.logoaa{
+	margin:50px;
+	margin-left:150px;
+	font-size:45px;
+	width:350px;
+
+	font-weight:bolder;
+	letter-spacing:2px;
+}
+
+
+
+
+.main
+{
+	width:100%;
+	left:480px;
+	right:1%;
+	margin-bottom:1%;
+	margin-left:170px;
+	
+
+}
+.main li
+{
+	border:1px solid #333;
+	font-family:Verdana, Geneva, sans-serif;
+	background-color:#333;
+	opacity:0.8;
+	display:inline;
+	margin-left:12px;
+	font-size:18px;
+    text-shadow: 1px 1px 25px rgba(153, 230, 255, 1);
+
+}
+.main li:hover
+{
+	background-color:#F00;
+}
+.main li a
+{
+	text-decoration:none;
+	color:#FFF;
+}
+
+.close
+{
+	padding:0px 0px 0px 740px;
+	height:40px;
+	width:40px;
+}

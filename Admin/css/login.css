@@ -1,0 +1,129 @@
+body { background:#000000; font: 12px/1.7em arial, sans-serif; }
+
+/* -------------------------------------------------------------- 
+   Login
+-------------------------------------------------------------- */
+
+#login { width: 450px; margin: 150px auto; text-align: center;  }
+
+
+	#login h1
+	{
+	 font-size:40px;
+	 color:#FFFFFF;
+	 border:1px solid;
+	 border-radius:5px;
+	 background-color:#990000;
+	 height:50px;
+	 padding:10px 0px 0px 0px;
+	 
+	}	
+#login-body 
+{ 
+	background: #FFF; 
+	padding-bottom: 15px; 
+	border: 1px solid #ccc;
+	padding: 0 0 10px 0; 
+	text-align: left;
+	width: 100%; 
+	overflow: hidden; 
+	-moz-border-radius: 6px; 
+	-webkit-border-radius: 6px;	
+	-moz-box-shadow: 1px 1px 10px rgba(0,0,0,.25);
+	-webkit-box-shadow: 1px 1px 10px  rgba(0,0,0,.25);
+}
+
+
+#login-body form { padding: 0 0 50px; position: relative; }
+
+#login-body input#login_password { width: 170px; position: absolute; top: 5px; left: 5px; }
+
+
+#login-body input.text 
+{
+    width: 275px;
+	font: bold 18px Helvetica, Arial, Verdana, sans-serif;
+	letter-spacing: -1px;
+	vertical-align: bottom;
+}
+
+
+
+	
+#login-body .pad { padding: 20px 20px 0 20px; }
+
+#login-body label,
+#login-body .label 
+{
+	font-size: 12px;
+    float: left;
+    line-height: 15px;
+    width: 100px;
+    padding: 15px 0 0 0;
+	margin: 0;
+	text-align: left;
+	font-weight: bold; 
+	
+}
+.button input
+{
+	background-color:#000099;
+}
+.log
+{	
+
+	padding:0px 0px 0px 300px;
+}
+.log input
+{
+	background-color:#0000CC;
+	height:30px;
+	width:120px;
+}
+.but input
+{
+	height:30px;
+	width:100px;
+	
+}
+#login-body .field div 
+{
+     float: left;
+     position: relative;
+     width: 300px;
+     padding: 0;
+	 margin: 0;
+ }
+             
+#login-body .field div span.input { text-align: right; line-height: 3em; font-size: 11px; padding-right: 10px !important; }
+
+#login-body .checkbox input { float: none !important; display: inline !important;}
+#login-body .checkbox label { float: none; display: inline; font-weight: normal; font-size: 11px; }
+
+#login-body input,
+#login-body select,
+#login-body textarea 
+{
+	margin: 0;
+	padding: 5px;
+	border: solid 1px #CCC;
+	color: #444;
+	background: #fff;
+	-moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+}
+
+#login-body input[type=checkbox] { border: none; }
+		
+#login-body span.input,
+#login-body  span.checkbox
+{
+	display: block;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	background: #EEE;
+	padding: 5px;
+	margin: 0 0 15px 0;
+}

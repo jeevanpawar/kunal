@@ -1,0 +1,67 @@
+
+
+ul{
+	margin:0;
+	padding:0;
+}
+
+ul.container{
+	/* The topmost UL */
+	
+	margin:0 auto;
+	padding:50px;
+}
+
+li{
+	
+	list-style:none;
+	text-align:left;
+}
+
+
+li.button a{
+	/* The section titles */
+	display:block;
+	font-family:Verdana, Geneva, sans-serif;
+	opacity:0.8;
+	border:1px solid #333;
+	font-size:17px;
+	height:34px;
+	position:relative;
+	width:130px;
+}
+
+li.button a:hover{
+	/* Removing the inherited underline from the titles */
+	text-decoration:none;
+}
+
+li.button a span{
+	/* This span acts as the right part of the section's background */
+	height:44px;
+	position:absolute;
+	right:0;
+	top:0;
+	width:4px;
+	
+	display:block;
+}
+
+.dropdown{
+	display:none;
+	padding-top:1px;
+	overflow:hidden;
+	float:left;
+}
+
+.dropdown li{
+	background-color:#373128;
+	color:#CCCCCC;
+	margin:5px 0;
+	height:150px;
+}
+
+
+/* The styles below are only necessary for the demo page */
+
+
