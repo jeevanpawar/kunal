@@ -19,6 +19,7 @@ body
 	position:relative;
 	margin-top:-10%;
 	color:#FFF;
+	overflow:visible;
 	font-size:41px;
 	font-weight:bold;
 	margin-left:-30px;
@@ -69,7 +70,7 @@ body
 </style>
 </head>
 
-<body>
+<body oncontextmenu="return false;">
 <div align="center" class="flash">
 <OBJECT classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000"
  codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=5,0,0,0"

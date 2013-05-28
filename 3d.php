@@ -117,7 +117,6 @@
     <!-- This is the actual slider ----------------------------------------- -->
     
     <!-- Help support Flow Slider. -->
-    <noscript><p>Powered By <a href="http://www.flowslider.com" title="jQuery Thumbnail Slider">Flow Slider</a></p></noscript>
 
 
 <script type="text/javascript">
@@ -394,7 +393,7 @@ init : init
 </style>
 </head>
 
-<body>
+<body oncontextmenu="return false;">
 
 	<div id="screen">
 

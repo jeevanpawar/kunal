@@ -184,7 +184,7 @@ $('div.background img').fadeIn(3000); // IE tweak
 </head>
 
 </script>
-<body>
+<body oncontextmenu="return false;">
 
 <div class="background">
 <img src="images/album/aa.jpg" class="st_preview"/> <img src="images/album/bb.jpg" class="st_preview"/> <img src="images/album/cc.jpg" class="st_preview"/> <img src="images/album/dd.jpg" class="st_preview"/> <img src="images/album/ff.jpg" class="st_preview"/><img src="images/album/gg.jpg" class="st_preview"/></div>

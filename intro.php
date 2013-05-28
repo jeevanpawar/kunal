@@ -46,7 +46,7 @@
 }
 </style>
 </head>
-<body>
+<body oncontextmenu="return false;">
 <!--<iframe title='YouTube video player' class='youtube-player' type='text/html'
         width='1000' height='600'
         src='http://www.youtube.com/embed/ZFo8b9DbcMM?rel=0&border=&autoplay=1'
