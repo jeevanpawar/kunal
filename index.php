@@ -1,4 +1,10 @@
-<html><head>
+<html>
+<head>
+<link rel="shortcut icon" href="images/logo.png">
+<link rel="apple-touch-icon" href="images/logo.png">
+<link rel="apple-touch-icon" sizes="72x72" href="images/logo.png">
+<link rel="apple-touch-icon" sizes="114x114" href="images/logo.png">
+
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>Kunal Arts</title>
 <style type="text/css">
@@ -9,6 +15,7 @@ body
 }
 .intoname
 {
+	top:0;
 	position:relative;
 	margin-top:-10%;
 	color:#FFF;
@@ -48,9 +55,9 @@ body
     -moz-animation-fill-mode:forwards;
     animation-fill-mode:forwards;
  
-    -webkit-animation-duration:25s;
-    -moz-animation-duration:25s;
-    animation-duration:25s;
+    -webkit-animation-duration:10s;
+    -moz-animation-duration:10s;
+    animation-duration:10s;
 }
 .flash
 {

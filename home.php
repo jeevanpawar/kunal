@@ -25,6 +25,10 @@ $row_show=mysql_fetch_array($show_res);
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
 <meta name="description" content="Thumbnails Navigation Gallery with jQuery and CSS3" />
 <meta name="keywords" content="jquery, thumbnails, gallery, menu, navigation, full page, background,image, photo, portfolio, photography"/>
+<link rel="shortcut icon" href="images/logo.png">
+<link rel="apple-touch-icon" href="images/logo.png">
+<link rel="apple-touch-icon" sizes="72x72" href="images/logo.png">
+<link rel="apple-touch-icon" sizes="114x114" href="images/logo.png">
 
 <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon"/>
 <link rel="stylesheet" href="css/style.css" type="text/css" media="screen"/>
