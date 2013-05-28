@@ -109,26 +109,53 @@
 {
 	border:5px inset #FFF;
 	margin-left:45px;
-	margin-top:15px;
-	height:250px;
-	width:250px;
+	margin-top:30px;
+	height:180px;
+	width:160px;
 }
 .aheading
 {
-	margin-top:-250px;
-	margin-left:350px;
-	font-size:20px;
+	margin-top:-180px;
+	margin-left:250px;
+	font-size:30px;
+	color:#F00;
+}
+.aheading2
+{
+	margin-top:50px;
+	margin-left:50px;
+	font-size:25px;
 	color:#F00;
 }
 .apara
 {
 	margin-top:15px;
-	margin-left:350px;
+	margin-left:250px;
 	margin-right:40px;
 	text-indent:25px;
 	text-align:justify;
+	letter-spacing:1px;
+	line-height:30px;
 }
+.aparasecond
+{
+	margin-top:15px;
+	margin-left:50px;
+	margin-right:40px;
+	text-indent:25px;
+	text-align:justify;
+	letter-spacing:1px;
+	line-height:25px;
+}
+.headline
+{
+	margin-top:15px;
+	margin-left:250px;
+	margin-right:40px;
 
+	letter-spacing:1px;
+	line-height:25px;
+}
 .tboutimg img
 {
 	border:5px inset #FFF;

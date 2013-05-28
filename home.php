@@ -199,10 +199,27 @@ $('div.background img').fadeIn(3000); // IE tweak
       <div class="port">
         <div class="close"><a href="#!/about"><img src="images/closeIcon.png" alt="" class="close"></a></div>
         <div class="heading">About Kunal Arts</div>
-        <div class="aboutimg"><img src=""></div>
-        <div class="aheading">Welcome To Kunal Arts</div>
-        <div class="apara">KUNAL ARTS was co-founded by two passionate photojournalists with a vision to revolutionize wedding photography, 			                  Praful Mehta & Abhishake saw an opportunity to leverage his background in photojournalism, direct-to-consumer marketing and technology. </div>
+        <div class="aboutimg"><img src="images/kunal sir.jpg"></div>
+        <div class="aheading">Kunal Rathod</div>
+        <div class="apara">
+        
+        Kunal Rathod has completed his Professional Photography from Shari Academy in the year 2008. 
+
+        </div>
+        <div class="aheading2">Achievements</div>
+
+        <div class="aparasecond">
+        He has been Awarded best Fashion Award, Top Gun Award and Master Kaftman Award in First year. Dean Award and TopGun Award in the second year.
+
+        PIE Award Digital Post Production (USA)
+
+        </div>
+        
+        <div class="aparasecond">
+	        Works for Atlas Copco, Samsonite, Rudra Farm, Takle Jwellers ,Techno Force Solution, Epitrans Electricals PVT LTD and also works for the Interior Artists in Mumbai and Nasik.
       </div>
+      </div>
+      
     </div>
   </div>
   <!-- /About --> 
