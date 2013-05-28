@@ -124,7 +124,7 @@
 {
 	margin-top:50px;
 	margin-left:50px;
-	font-size:25px;
+	font-size:30px;
 	color:#F00;
 }
 .apara
@@ -146,6 +146,25 @@
 	text-align:justify;
 	letter-spacing:1px;
 	line-height:25px;
+}
+.add
+{
+	width:500px;
+	margin-left:20px;
+	line-height:20px;
+}
+.conthead
+{
+	font-size:25px;
+	color:#F00;
+	
+}
+.conadd
+{
+	margin-top:25px;
+	font-size:18px;
+	letter-spacing:1px;
+	
 }
 .headline
 {

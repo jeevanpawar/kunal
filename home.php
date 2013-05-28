@@ -290,35 +290,25 @@ $('div.background img').fadeIn(3000); // IE tweak
       <div class="close"><a href="#!/contact"><img src="images/closeIcon.png" alt="" class="close"></a></div>
       <div class="heading">Contact Us</div>
       <div class="address">
-      <div class="contact">Contact Details</div>
-      <br /><br />      
-      <table width="300" height="200">
-      <tr>
-      <td>KUNAL D. RATHOD</td>
-      
-      </tr>
-      <tr>
-      <td>Address:KUNAL ARTS STUDIO
-			basement shraddha simran park,
-			Patil lane no. 3, B/H McDonald's,
-			College road, nashik -422 007
-			</td>
-      <td></td>
-      </tr>
-      <tr>
-      <td>Mobile:</td>
-      <td>+919922948680-81</td>
-      </tr>
-	  <tr>
-      <td>Email:</td>
-      <td><a href="">Kunal_rathod@kunalArts.com</a>
+      <br /><br /> 
+      <div class="add">     
+	  <div class="conthead">KUNAL D. RATHOD</div>
+      <div class="conadd">ADDRESS</div>
+      <div class="conadd">
+      KUNAL ARTS STUDIO,<br>
+			Basement Shraddha Simran Park,<br>
+			Patil Lane No. 3, B/H McDonald's,<br>
+			College Road, Nashik -422 007.
+	  </div>
+      <div class="conadd">Mobile:+919922948680-81
+      </div>
+      <div class="conadd">
+      Email:
+      <a href="">Kunal_rathod@kunalArts.com</a>
       <br>
-      <a href="">Krathod25@gmail.com</a>
-      </td>
-      </tr>
-
-      </table>
-      
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="">Krathod25@gmail.com</a>
+      </div>
+        </div>
       </div>
      
     </div>
