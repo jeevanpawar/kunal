@@ -55,7 +55,7 @@
         frameborder='0'></iframe> -->
 
 <div class="parent">
-  <div class="right"> <a href="home.php">
+  <div class="right"> <a href="painting.php">
     <div class="serviceItem top-margin-intro darkslider">
       <div class="serviceInfoWrap">
         <div class="serviceInfo">
