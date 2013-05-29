@@ -53,6 +53,7 @@ ul.st_navigation li .st_arrow_up{
 	
 }
 .st_thumbs img{
+	border:1px solid #000;
     float:left;
     margin:3px 3px 0px 0px;
     cursor:pointer;

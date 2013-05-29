@@ -105,6 +105,19 @@ $row_show=mysql_fetch_array($show_res);
 
 </style>
 
+<style>
+	#r
+	{
+		-webkit-transition:-webkit-transform 1s;
+	}
+	#r:hover
+	{
+		border:1px solid #333;
+		opacity:0.9;
+		-webkit-transform:rotate(360deg);
+	}
+	
+</style>
 
 <style>
 div.background {
@@ -255,7 +268,7 @@ $('div.background img').fadeIn(3000); // IE tweak
 					
 						while($row1=mysql_fetch_array($res1))
 						{
-							echo "<a href='3d.php?id2=$row1[3]&&id3=$row1[0]'><img src='Admin/photos/$row1[1]' width='180' height='140''></a>";
+							echo "<a href='3d.php?id2=$row1[3]&&id3=$row1[0]'><img id='r' src='Admin/photos/$row1[1]' width='175' height='120''></a>";
 						}
 					echo "</div>";
 					echo "</div>";

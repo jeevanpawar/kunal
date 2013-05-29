@@ -8,13 +8,17 @@
          <script src="js/jquery-1.7.1.min.js"></script>
     <script src="js/jquery.easing.1.3.js"></script>
     <script src="js/flowslider.jquery.js"></script>
-        
+  <link rel="shortcut icon" href="images/logo.png">
+<link rel="apple-touch-icon" href="images/logo.png">
+<link rel="apple-touch-icon" sizes="72x72" href="images/logo.png">
+<link rel="apple-touch-icon" sizes="114x114" href="images/logo.png">
+      
 <style type="text/css">
 	html {
 		overflow: hidden;
 	}
 	.www_FlowSlider_com-wrap-2 {
-		width: 1500px;
+		width: 2000px;
 		height: 40px;
 	}
 	body {
@@ -35,6 +39,7 @@
 }
 	
 	.st_thumbs img{
+		border:1px solid #333;
     float:left;
     margin:3px 3px 0px 0px;
     cursor:pointer;
@@ -72,8 +77,6 @@
 		left: 1em;
 		bottom: 0.1em;
 		z-index: 30000;
-		background:#000;
-		border: #000 solid 1em;
 	}
 	#bar {
 		position:relative;
@@ -104,8 +107,21 @@
 	}
 	.close
 	{
-		background-color:#333;
+		position:absolute;
+		z-index:3000;
 		width:100px;
+	}
+	.logo
+	{
+		position:absolute;
+		z-index:3000;
+		width:100px;
+	}
+	.logo img
+	{
+		width:80px;
+		margin-left:10px;
+		margin-top:10px;
 	}
 </style>
 
@@ -380,21 +396,16 @@ init : init
 	}
 	#bar .button:hover
 	{
-		border:5px solid #999;
+		border:1px solid #333;
 		opacity:0.9;
 		-webkit-transform:rotate(360deg);
 	}
-	.logo
-	{
-
-		opacity:0;
-		
-	}
+	
 </style>
 </head>
 
 <body oncontextmenu="return false;">
-
+<div class="logo"><a href="home.php#portfolio"><img src="images/logo.png"></a></div>
 	<div id="screen">
 
 
@@ -408,6 +419,7 @@ init : init
 	</div>
     <?php 
 		include("Admin/config.inc.php");
+		
 		$mid=$_GET['id2'];
 		$qry="select * from gallery_photos where photo_category='$mid'";
 		$res=mysql_query($qry);
