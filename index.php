@@ -13,34 +13,44 @@ body
 {
 	background-color:#000;
 }
-.intoname
-{
+#hide {
 	top:0;
-	position:relative;
-	margin-top:-10%;
-	color:#FFF;
+    position:relative;
 	overflow:visible;
+	top:0;
+	margin-top:-10%;
+
 	font-size:41px;
-	font-weight:bold;
 	margin-left:-30px;
 	letter-spacing:2px;
 	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
 	text-shadow: 1px 1px 25px rgba(153, 230, 255, 1);
 
-}
-.intoname a
+
+ }
+#hide a
 {
+	color:#FFF;
 	text-decoration:none;
-	color:#FFF;
 }
-.sloname
-{
-	position:relative;
-	font-size:13px;
+#slo {
+	top:0;
+    position:relative;
+	overflow:visible;
+	top:0;
+color:#FFF;
+	font-size:20px;
 	margin-left:-30px;
-	letter-spacing:5px;
+	letter-spacing:2px;
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	text-shadow: 1px 1px 25px rgba(153, 230, 255, 1);
+
+
+ }
+#slo a
+{
 	color:#FFF;
-	font-family:"Lucida Console", Monaco, monospace;
+	text-decoration:none;
 }
 @-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
 @-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
@@ -67,6 +77,7 @@ body
 	margin-right:-8px;
 	
 }
+
 </style>
 </head>
 
@@ -82,11 +93,19 @@ body
  <EMBED src="kunal.swf" loop=false quality=high bgcolor=#000000 width="100%" height="99%" SCALE="exactfit" TYPE="application/x-shockwave-flash" PLUGINSPAGE="http://www.macromedia.com/shockwave/download/index.cgi?P1_Prod_Version=ShockwaveFlash"></EMBED>
 </OBJECT>
 </div>
-<div class="intoname fade-in" align="center">
+<div id="hide" class="fade-in" style="visibility: hidden" align="center">
 <a href="intro.php">KUNAL ARTS </a>
 </div>
-<div class="sloname fade-in" align="center">
+<div id="slo" class="fade-in" style="visibility: hidden" align="center">
 COMMERCIAL PHOTOGRAPHY
 </div>
+<script type="text/javascript">
+function showIt() {
+  document.getElementById("hide").style.visibility = "visible";
+    document.getElementById("slo").style.visibility = "visible";
+
+}
+setTimeout("showIt()", 10000); // after 2 sec
+</script>
 </body>
 </html>
