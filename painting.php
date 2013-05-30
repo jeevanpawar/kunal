@@ -182,7 +182,7 @@ $('div.background img').fadeIn(3000); // IE tweak
 </script>
 <body>
 
-<div class="background"><img src="images/album/aa.jpg" class="st_preview"/> <img src="images/album/bb.jpg" class="st_preview"/> <img src="images/album/cc.jpg" class="st_preview"/> <img src="images/album/dd.jpg" class="st_preview"/> <img src="images/album/ff.jpg" class="st_preview"/><img src="images/album/g.jpg" class="st_preview"/></div>
+<div class="background"><img src="images/album/aa.jpg" class="st_preview"/> <img src="images/album/bb.jpg" class="st_preview"/> <img src="images/album/cc.jpg" class="st_preview"/> <img src="images/album/dd.jpg" class="st_preview"/> <img src="images/album/ff.jpg" class="st_preview"/><img src="images/album/gg.jpg" class="st_preview"/></div>
   
 <div class="fix"><img id="anim" src="images/logo.png" class="logo"><div class="logoname">Kunal Arts</div>
 <div class="slogal">COMMERCIAL PHOTOGRAPHY</div>
