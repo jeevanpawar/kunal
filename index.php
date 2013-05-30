@@ -16,8 +16,6 @@ body
 #hide {
 	top:0;
     position:relative;
-	overflow:visible;
-	top:0;
 	margin-top:-10%;
 
 	font-size:41px;
@@ -28,17 +26,17 @@ body
 
 
  }
+ 
 #hide a
 {
 	color:#FFF;
 	text-decoration:none;
 }
+
 #slo {
 	top:0;
     position:relative;
-	overflow:visible;
-	top:0;
-color:#FFF;
+	color:#FFF;
 	font-size:20px;
 	margin-left:-30px;
 	letter-spacing:2px;
@@ -101,7 +99,7 @@ COMMERCIAL PHOTOGRAPHY
 </div>
 <script type="text/javascript">
 function showIt() {
-  document.getElementById("hide").style.visibility = "visible";
+    document.getElementById("hide").style.visibility = "visible";
     document.getElementById("slo").style.visibility = "visible";
 
 }
