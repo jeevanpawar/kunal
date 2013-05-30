@@ -93,10 +93,10 @@ color:#FFF;
  <EMBED src="kunal.swf" loop=false quality=high bgcolor=#000000 width="100%" height="99%" SCALE="exactfit" TYPE="application/x-shockwave-flash" PLUGINSPAGE="http://www.macromedia.com/shockwave/download/index.cgi?P1_Prod_Version=ShockwaveFlash"></EMBED>
 </OBJECT>
 </div>
-<div id="hide" class="fade-in" style="visibility: hidden" align="center">
+<div id="hide" style="visibility: hidden" align="center">
 <a href="intro.php">KUNAL ARTS </a>
 </div>
-<div id="slo" class="fade-in" style="visibility: hidden" align="center">
+<div id="slo" style="visibility: hidden" align="center">
 COMMERCIAL PHOTOGRAPHY
 </div>
 <script type="text/javascript">
