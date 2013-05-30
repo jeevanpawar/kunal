@@ -124,12 +124,12 @@ span.reference {
 	
 	position:fixed;
 	width:80%;
-	margin-left:28%;
+	margin-left:18%;
 	left:-1px;
 	right:-1px;
 	text-align:center;
 	height:50px;
-	bottom:30px;
+	bottom:40px;
 }
 
 span.like
@@ -182,7 +182,7 @@ $('div.background img').fadeIn(3000); // IE tweak
 </script>
 <body>
 
-<div class="background"><img src="images/album/a.jpg" class="st_preview"/> <img src="images/album/b.jpg" class="st_preview"/> <img src="images/album/c.jpg" class="st_preview"/> <img src="images/album/d.jpg" class="st_preview"/> <img src="images/album/e.jpg" class="st_preview"/><img src="images/album/f.jpg" class="st_preview"/><img src="images/album/g.jpg" class="st_preview"/></div>
+<div class="background"><img src="images/album/aa.jpg" class="st_preview"/> <img src="images/album/bb.jpg" class="st_preview"/> <img src="images/album/cc.jpg" class="st_preview"/> <img src="images/album/dd.jpg" class="st_preview"/> <img src="images/album/ff.jpg" class="st_preview"/><img src="images/album/g.jpg" class="st_preview"/></div>
   
 <div class="fix"><img id="anim" src="images/logo.png" class="logo"><div class="logoname">Kunal Arts</div>
 <div class="slogal">COMMERCIAL PHOTOGRAPHY</div>
@@ -325,6 +325,7 @@ $('div.background img').fadeIn(3000); // IE tweak
                 <li><a class="topmenu" href="home.php" title="First example">Home</a></li>
                 <li><a class="topmenu" id="link-about" href="#about">About Us</a></li>
                 <li><a class="topmenu" id="link-portfolio" href="#portfolio" >Portfolio</a></li>
+                <li><a class="topmenu" href="home.php" >Photography</a></li>
                 <li><a class="topmenu" id="link-about" href="#contact">Contact</a></li>
             </ul>
             </div>
