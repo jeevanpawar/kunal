@@ -198,26 +198,17 @@ $('div.background img').fadeIn(3000); // IE tweak
     <div class="content">
       <div class="port">
         <div class="close"><a href="#!/about"><img src="images/closeIcon.png" alt="" class="close"></a></div>
-        <div class="heading">About Kunal Arts</div>
+        <div class="heading">About Dattaray R. Rathod</div>
         <div class="aboutimg"><img src="images/kunal sir.jpg"></div>
-        <div class="aheading">Kunal Rathod</div>
+        <div class="aheading">Dattaray R. Rathod</div>
         <div class="apara">
         
-        Kunal Rathod has completed his Professional Photography from Shari Academy in the year 2008. 
-
-        </div>
-        <div class="aheading2">Achievements</div>
-
-        <div class="aparasecond">
-        He has been Awarded best Fashion Award, Top Gun Award and Master Kaftman Award in First year. Dean Award and TopGun Award in the second year.
-
-        PIE Award Digital Post Production (USA)
+       Dattaray R. Rathod has completed his G. D Art -/A.T.D/A.M. from Chitrakala Maha Vidyalaya Art Master from Chitrakala Mahavidyala (Nasik).
+       <br>Working Style-"Indian Art".
+<br>Works as a Teacher in Gokhale Education Society.
 
         </div>
         
-        <div class="aparasecond">
-	        Works for Atlas Copco, Samsonite, Rudra Farm, Takle Jwellers ,Techno Force Solution, Epitrans Electricals PVT LTD and also works for the Interior Artists in Mumbai and Nasik.
-      </div>
       </div>
       
     </div>
