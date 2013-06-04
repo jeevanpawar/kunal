@@ -18,7 +18,7 @@
 		overflow: hidden;
 	}
 	.www_FlowSlider_com-wrap-2 {
-		width: 2000px;
+		width: 1500px;
 		height: 40px;
 	}
 	body {
@@ -39,7 +39,8 @@
 }
 	
 	.st_thumbs img{
-		border:1px solid #333;
+	opacity:0.9;
+	border:1px solid #333;
     float:left;
     margin:3px 3px 0px 0px;
     cursor:pointer;
@@ -53,14 +54,17 @@
 		position: absolute;
 		width: 100%;
 		height: 100%;
-		background: #000;
+		background:#666;
 		overflow: hidden;
 	}
 	#screen img, canvas { 
+
 		position: absolute;
 		left: -9999px;
+		border:2px solid #000;
 		cursor: pointer;
         image-rendering: optimizeSpeed;
+		box-shadow:120px 120px bd;
 
 	}
 	#screen .href {
@@ -70,7 +74,7 @@
 		position: absolute;
 		background: #fff;
 		opacity: 0.1;
-		filter: alpha(opacity=10);
+		filter: alpha(opacity=60);
 	}
 	#command {
 		position:absolute;
@@ -80,15 +84,15 @@
 	}
 	#bar {
 		position:relative;
-		width: 1300px;
+		width: 1450px;
 		left: 1em;
-		top: 1em;
+		top: 3em;
 		height: 100px;
 	}
 	#bar .button { 
 		position: absolute;
-		width: 100px;
-		height: 75px;
+		width: 75px;
+		height: 55px;
 		cursor: pointer;
 	}
 	#bar .loaded { 
@@ -404,7 +408,7 @@ init : init
 </style>
 </head>
 
-<body oncontextmenu="return false;">
+<body>
 <div class="logo"><a href="home.php#portfolio"><img src="images/logo.png"></a></div>
 	<div id="screen">
 
