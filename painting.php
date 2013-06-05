@@ -1,5 +1,6 @@
 <?php
 include("Admin/config.inc.php");
+
 error_reporting(0);
 $counter = 0;
 $r=$_SERVER['REMOTE_ADDR'];
@@ -12,19 +13,17 @@ $show_res=mysql_query($show);
 $row_show=mysql_fetch_array($show_res);
 
 ?>
-<?php 
-	$qry="select * from gallery_photos where photo_category='4'";
-	$res=mysql_query($qry);
-	$res1=mysql_query($qry);
-	$res2=mysql_query($qry);
-	$res3=mysql_query($qry);
-?>
+
 <html>
 <head>
 <title>Kunal Arts</title>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
 <meta name="description" content="Thumbnails Navigation Gallery with jQuery and CSS3" />
 <meta name="keywords" content="jquery, thumbnails, gallery, menu, navigation, full page, background,image, photo, portfolio, photography"/>
+<link rel="shortcut icon" href="images/logo.png">
+<link rel="apple-touch-icon" href="images/logo.png">
+<link rel="apple-touch-icon" sizes="72x72" href="images/logo.png">
+<link rel="apple-touch-icon" sizes="114x114" href="images/logo.png">
 
 <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon"/>
 <link rel="stylesheet" href="css/style.css" type="text/css" media="screen"/>
@@ -101,6 +100,19 @@ $row_show=mysql_fetch_array($show_res);
 
 </style>
 
+<style>
+	#r
+	{
+		-webkit-transition:-webkit-transform 1s;
+	}
+	#r:hover
+	{
+		border:1px solid #333;
+		opacity:0.9;
+		-webkit-transform:rotate(360deg);
+	}
+	
+</style>
 
 <style>
 div.background {
@@ -180,10 +192,17 @@ $('div.background img').fadeIn(3000); // IE tweak
 </head>
 
 </script>
-<body>
+<body oncontextmenu="return false;">
+<div class="background">
 
-<div class="background"><img src="images/album/aa.jpg" class="st_preview"/> <img src="images/album/bb.jpg" class="st_preview"/> <img src="images/album/cc.jpg" class="st_preview"/> <img src="images/album/dd.jpg" class="st_preview"/> <img src="images/album/ff.jpg" class="st_preview"/><img src="images/album/gg.jpg" class="st_preview"/></div>
+<img src="images/album/hh.jpg" class="st_preview"/>
+<img src="images/album/ii.jpg" class="st_preview"/>
+<img src="images/album/jj.jpg" class="st_preview"/>
+<img src="images/album/kk.jpg" class="st_preview"/>
+
+</div>
   
+
 <div class="fix"><img id="anim" src="images/logo.png" class="logo"><div class="logoname">Kunal Arts</div>
 <div class="slogal">COMMERCIAL PHOTOGRAPHY</div>
 </div>
@@ -198,17 +217,26 @@ $('div.background img').fadeIn(3000); // IE tweak
     <div class="content">
       <div class="port">
         <div class="close"><a href="#!/about"><img src="images/closeIcon.png" alt="" class="close"></a></div>
-        <div class="heading">About Dattaray R. Rathod</div>
+        <div class="heading">About Kunal Arts</div>
         <div class="aboutimg"><img src="images/kunal sir.jpg"></div>
-        <div class="aheading">Dattaray R. Rathod</div>
+        <div class="aheading">Kunal Rathod</div>
         <div class="apara">
         
-       Dattaray R. Rathod has completed his G. D Art -/A.T.D/A.M. from Chitrakala Maha Vidyalaya Art Master from Chitrakala Mahavidyala (Nasik).
-       <br>Working Style-"Indian Art".
-<br>Works as a Teacher in Gokhale Education Society.
+        Kunal Rathod has completed his Professional Photography from Shari Academy in the year 2008. 
+
+        </div>
+        <div class="aheading2">Achievements</div>
+
+        <div class="aparasecond">
+        He has been Awarded best Fashion Award, Top Gun Award and Master Kaftman Award in First year. Dean Award and TopGun Award in the second year.
+
+        PIE Award Digital Post Production (USA)
 
         </div>
         
+        <div class="aparasecond">
+	        Works for Atlas Copco, Samsonite, Rudra Farm, Takle Jwellers ,Techno Force Solution, Epitrans Electricals PVT LTD and also works for the Interior Artists in Mumbai and Nasik.
+      </div>
       </div>
       
     </div>
@@ -226,7 +254,7 @@ $('div.background img').fadeIn(3000); // IE tweak
 				<?php
 				
 					include("Admin/config.inc.php");
-    	       		$qry="select * from gallery_category";
+    	       		$qry="select * from gallery_category where caption='paint'";
 					$res=mysql_query($qry);
 					
 					
@@ -241,7 +269,7 @@ $('div.background img').fadeIn(3000); // IE tweak
 					
 						while($row1=mysql_fetch_array($res1))
 						{
-							echo "<a href='3d.php?id2=$row1[3]&&id3=$row1[0]'><img src='Admin/photos/$row1[1]' width='180' height='140''></a>";
+							echo "<a href='paint3d.php?id2=$row1[3]&&id3=$row1[0]'><img id='r' src='Admin/photos/$row1[1]' width='175' height='120''></a>";
 						}
 					echo "</div>";
 					echo "</div>";
@@ -313,10 +341,10 @@ $('div.background img').fadeIn(3000); // IE tweak
          <span class="reference">
              <div>
              <ul id="menu" class="main">
-                <li><a class="topmenu" href="home.php" title="First example">Home</a></li>
+                <li><a class="topmenu" href="painting.php" title="First example">Home</a></li>
                 <li><a class="topmenu" id="link-about" href="#about">About Us</a></li>
                 <li><a class="topmenu" id="link-portfolio" href="#portfolio" >Portfolio</a></li>
-                <li><a class="topmenu" href="home.php" >Photography</a></li>
+                <li><a class="topmenu" href="painting.php" >Painting</a></li>
                 <li><a class="topmenu" id="link-about" href="#contact">Contact</a></li>
             </ul>
             </div>

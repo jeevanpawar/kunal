@@ -50,31 +50,7 @@ body
 	color:#FFF;
 	text-decoration:none;
 }
-@-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
-@-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
-@keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
- 
-.fade-in {
-    opacity:0;  /* make things invisible upon start */
-    -webkit-animation:fadeIn ease-in 0;  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
-    -moz-animation:fadeIn ease-in 0;
-    animation:fadeIn ease-in 0;
- 
-    -webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
-    -moz-animation-fill-mode:forwards;
-    animation-fill-mode:forwards;
- 
-    -webkit-animation-duration:10s;
-    -moz-animation-duration:10s;
-    animation-duration:10s;
-}
-.flash
-{
-	margin-top:-5px;
-	margin-left:-8px;
-	margin-right:-8px;
-	
-}
+
 
 </style>
 </head>
@@ -91,19 +67,23 @@ body
  <EMBED src="ganesha2.swf" loop=false quality=low bgcolor=#000000 width="100%" height="99%" SCALE="exactfit" TYPE="application/x-shockwave-flash" PLUGINSPAGE="http://www.macromedia.com/shockwave/download/index.cgi?P1_Prod_Version=ShockwaveFlash"></EMBED>
 </OBJECT>
 </div>
-<div id="hide" style="visibility: hidden" align="center">
+<div id="hide" align="center">
 <a href="intro.php">KUNAL ARTS </a>
 </div>
-<div id="slo" style="visibility: hidden" align="center">
+<div id="slo" align="center">
 COMMERCIAL PHOTOGRAPHY
 </div>
-<script type="text/javascript">
-function showIt() {
-    document.getElementById("hide").style.visibility = "visible";
-    document.getElementById("slo").style.visibility = "visible";
 
-}
-setTimeout("showIt()", 10000); // after 2 sec
+<script type="text/javascript">
+$(document).ready( function(){
+        var to=setTimeout("showDiv()",1000);        
+    });
+   
+    function showDiv()
+    {
+        $("#hide").show();
+    }
+ 
 </script>
 </body>
 </html>

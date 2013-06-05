@@ -409,8 +409,8 @@ init : init
 </style>
 </head>
 
-<body oncontextmenu="return false;"> 
-<div class="logo"><a href="home.php#portfolio"><img src="images/logo.png"></a></div>
+<body oncontextmenu="return false;">
+<div class="logo"><a href="painting.php#portfolio"><img src="images/logo.png"></a></div>
 	<div id="screen">
 
 

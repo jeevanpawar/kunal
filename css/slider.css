@@ -27,6 +27,8 @@ ul.st_navigation li span.st_link{
 	width:100px;
 	text-align:center;
 	padding:5px 20px 0px 20px;
+	box-shadow:2px 5px 10px #000;
+	border:1px solid #333;
 }
 ul.st_navigation li .st_arrow_down,
 ul.st_navigation li .st_arrow_up{

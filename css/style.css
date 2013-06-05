@@ -16,7 +16,6 @@ body{
 	width:90px;
 	margin-left:30px;
 	margin-top:15px;
-	text-shadow: 1px 1px 25px rgba(153, 230, 255, 1);
 
 
 }
@@ -31,7 +30,7 @@ body{
 	letter-spacing:1px;
 	font-weight:bold;
 	width:350px;
-    text-shadow: 1px 1px 25px rgba(153, 230, 255, 1);
+	text-shadow:2px 5px 10px #000;
 
 	
 }
@@ -51,7 +50,7 @@ body{
 	text-align:center;
 	height:20px;
 	color:#FFF;
-    text-shadow: 1px 1px 25px rgba(153, 230, 255, 1);
+	text-shadow:2px 5px 10px #000;
 
 }
 .logoaa{
@@ -87,6 +86,7 @@ body{
 	margin-left:12px;
 	font-size:18px;
     text-shadow: 1px 1px 25px rgba(153, 230, 255, 1);
+	box-shadow:2px 5px 10px #000;
 
 }
 .main li:hover

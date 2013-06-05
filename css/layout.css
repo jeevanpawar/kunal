@@ -239,10 +239,10 @@ header {
 .ie8 .serviceInfo .serviceInfoBack {
     display: none;
 }
-.darkslider, .darkslider .serviceInfoFront {background-image: url(../intro2.jpg);}
-.darkvideo, .darkvideo .serviceInfoFront {background-image: url(../intro2.jpg);}
-.lightslider, .lightslider .serviceInfoFront {background-image: url(../intro1.jpg);}
-.lightvideo, .lightvideo .serviceInfoFront {background-image: url(../intro1.jpg);}
+.darkslider, .darkslider .serviceInfoFront {background-image: url(../intro2.jpg); box-shadow:2px 5px 10px #000;}
+.darkvideo, .darkvideo .serviceInfoFront {background-image: url(../intro2.jpg); box-shadow:2px 5px 10px #000;}
+.lightslider, .lightslider .serviceInfoFront {background-image: url(../intro1.jpg); box-shadow:2px 5px 10px #000;}
+.lightvideo, .lightvideo .serviceInfoFront {background-image: url(../intro1.jpg); box-shadow:2px 5px 10px #000;}
 
 
 .paint:hover

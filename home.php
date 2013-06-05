@@ -1,5 +1,6 @@
 <?php
 include("Admin/config.inc.php");
+
 error_reporting(0);
 $counter = 0;
 $r=$_SERVER['REMOTE_ADDR'];
@@ -12,13 +13,7 @@ $show_res=mysql_query($show);
 $row_show=mysql_fetch_array($show_res);
 
 ?>
-<?php 
-	$qry="select * from gallery_photos where photo_category='4'";
-	$res=mysql_query($qry);
-	$res1=mysql_query($qry);
-	$res2=mysql_query($qry);
-	$res3=mysql_query($qry);
-?>
+
 <html>
 <head>
 <title>Kunal Arts</title>
@@ -199,8 +194,22 @@ $('div.background img').fadeIn(3000); // IE tweak
 </script>
 <body oncontextmenu="return false;">
 <div class="background">
-<img src="images/album/aa.jpg" class="st_preview"/> <img src="images/album/bb.jpg" class="st_preview"/> <img src="images/album/cc.jpg" class="st_preview"/> <img src="images/album/dd.jpg" class="st_preview"/><img src="images/album/ee.jpg" class="st_preview"/> <img src="images/album/ff.jpg" class="st_preview"/><img src="images/album/gg.jpg" class="st_preview"/><img src="images/album/hh.jpg" class="st_preview"/><img src="images/album/ii.jpg" class="st_preview"/><img src="images/album/jj.jpg" class="st_preview"/><img src="images/album/kk.jpg" class="st_preview"/></div>
+
+<img src="images/album/aa.jpg" class="st_preview"/> 
+<img src="images/album/bb.jpg" class="st_preview"/> 
+<img src="images/album/cc.jpg" class="st_preview"/>
+<img src="images/album/dd.jpg" class="st_preview"/>
+<img src="images/album/ee.jpg" class="st_preview"/>
+<img src="images/album/ff.jpg" class="st_preview"/>
+<img src="images/album/gg.jpg" class="st_preview"/>
+<img src="images/album/hh.jpg" class="st_preview"/>
+<img src="images/album/ii.jpg" class="st_preview"/>
+<img src="images/album/jj.jpg" class="st_preview"/>
+<img src="images/album/kk.jpg" class="st_preview"/>
+
+</div>
   
+
 <div class="fix"><img id="anim" src="images/logo.png" class="logo"><div class="logoname">Kunal Arts</div>
 <div class="slogal">COMMERCIAL PHOTOGRAPHY</div>
 </div>
@@ -252,7 +261,7 @@ $('div.background img').fadeIn(3000); // IE tweak
 				<?php
 				
 					include("Admin/config.inc.php");
-    	       		$qry="select * from gallery_category";
+    	       		$qry="select * from gallery_category where caption='Photo'";
 					$res=mysql_query($qry);
 					
 					
