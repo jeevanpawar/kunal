@@ -53,37 +53,55 @@ body
 
 
 </style>
+<script type='text/javascript' src='js/jquery-1.5.1.min.js'></script> 
+<script type='text/javascript'> 
+
+  $(window).load(function(){
+  setTimeout(
+   function(){
+
+      $('#hide').show();
+
+   },
+  10000
+);
+  });
+ </script>
+ <script type='text/javascript'> 
+
+  $(window).load(function(){
+  setTimeout(
+   function(){
+
+      $('#slo').show();
+
+   },
+  10000
+);
+  });
+ </script>
 </head>
 
 <body oncontextmenu="return false;">
+
 <div align="center" class="flash">
 <OBJECT classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000"
  codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=5,0,0,0"
- width="100%" height="99%">
+ width="100%" height="98%">
  <PARAM NAME=movie VALUE="ganesha2.swf"> 
 <PARAM NAME=loop VALUE=false> 
 <PARAM NAME=quality VALUE=high> 
 <PARAM NAME=bgcolor VALUE=#000000>
- <EMBED src="ganesha2.swf" loop=false quality=low bgcolor=#000000 width="100%" height="99%" SCALE="exactfit" TYPE="application/x-shockwave-flash" PLUGINSPAGE="http://www.macromedia.com/shockwave/download/index.cgi?P1_Prod_Version=ShockwaveFlash"></EMBED>
+ <EMBED src="ganesha2.swf" loop=false quality=low bgcolor=#000000 width="100%" height="98%" SCALE="exactfit" TYPE="application/x-shockwave-flash" PLUGINSPAGE="http://www.macromedia.com/shockwave/download/index.cgi?P1_Prod_Version=ShockwaveFlash"></EMBED>
 </OBJECT>
 </div>
-<div id="hide" align="center">
+<div id="hide" style="display:none;" align="center">
 <a href="intro.php">KUNAL ARTS </a>
 </div>
-<div id="slo" align="center">
+<div id="slo" style="display:none;" align="center">
 COMMERCIAL PHOTOGRAPHY
 </div>
 
-<script type="text/javascript">
-$(document).ready( function(){
-        var to=setTimeout("showDiv()",1000);        
-    });
-   
-    function showDiv()
-    {
-        $("#hide").show();
-    }
- 
-</script>
+
 </body>
 </html>
