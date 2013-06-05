@@ -344,7 +344,7 @@ $('div.background img').fadeIn(3000); // IE tweak
                 <li><a class="topmenu" href="painting.php" title="First example">Home</a></li>
                 <li><a class="topmenu" id="link-about" href="#about">About Us</a></li>
                 <li><a class="topmenu" id="link-portfolio" href="#portfolio" >Portfolio</a></li>
-                <li><a class="topmenu" href="painting.php" >Painting</a></li>
+                <li><a class="topmenu" href="painting.php" >Photography</a></li>
                 <li><a class="topmenu" id="link-about" href="#contact">Contact</a></li>
             </ul>
             </div>
