@@ -399,7 +399,7 @@ init : init
 
 </head>
 
-<body>
+<body oncontextmenu="return false;">
 <audio autoplay="autoplay" loop="loop">
 <source src="all.ogg" type="audio/ogg">
 </audio>
