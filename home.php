@@ -1,3 +1,4 @@
+<?php if (substr_count($_SERVER['HTTP_ACCEPT_ENCODING'], 'gzip')) ob_start("ob_gzhandler"); else ob_start(); ?>
 <?php
 include("Admin/config.inc.php");
 
@@ -36,47 +37,46 @@ $row_show=mysql_fetch_array($show_res);
 <link rel="stylesheet" type="text/css" href="css/demo.css" />
 
 <script type="text/javascript" src="js/jquery.min.js"></script>
-<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
-
-<script type="text/javascript" src="js/script.js"></script>
-
-<!-- color picker -->
-        
-
-<script type="text/javascript" src="jscolor/jscolor.js"></script>
-<!-- jQuery framework -->
-<script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
-<!-- jQueriy easing plugin-->
-<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
-<!-- lhpTwoColorButton plugin -->
-<script type="text/javascript" src="js/jquery.lhpTwoColorButton.min.js"></script>
-<!-- lhpTwoColorButton plugin -->
-<script type="text/javascript" src="js/jquery.lhpMenuTwoColorButton.min.js"></script>
-<!-- preview main js code -->
-<script type="text/javascript" src="js/main.js"></script>
-
-
-<script src="js/cufon-yui.js" type="text/javascript"></script>
-<script src="js/Quicksand_Book_400.font.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-			Cufon.replace('span,p,h1',{
-				textShadow: '0px 0px 1px #ffffff'
-			});
+<script type="text/javascript" src="js/script.js" defer="defer"></script>
+<script type="text/javascript" src="js/jquery-1.7.2.min.js" defer="defer"></script>
+<script type="text/javascript" src="jscolor/jscolor.js" defer="defer"></script>
+<script type="text/javascript" src="js/jquery.easing.1.3.js" defer="defer"></script>
+<script type="text/javascript" src="js/jquery.lhpTwoColorButton.min.js" defer="defer"></script>
+<script type="text/javascript" src="js/jquery.lhpMenuTwoColorButton.min.js" defer="defer"></script>
+<script type="text/javascript" src="js/main.js" defer="defer"></script>
+<script type="text/javascript"
+    src="http://maps.google.com/maps/api/js?sensor=false" >
 </script>
-
-<script type="text/javascript" src="jscolor/jscolor.js"></script>
-<!-- jQuery framework -->
-		
-        <!-- jQueriy easing plugin-->
-        <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
-        <!-- lhpTwoColorButton plugin -->
-        <script type="text/javascript" src="js/jquery.lhpTwoColorButton.min.js"></script>
-        <!-- lhpTwoColorButton plugin -->
-        <script type="text/javascript" src="js/jquery.lhpMenuTwoColorButton.min.js"></script>
-        <!-- preview main js code -->
-        <script type="text/javascript" src="js/main.js"></script>
-        
+<script type="text/javascript">
+  function initialize() {
+    var position = new google.maps.LatLng(20.007672 ,73.758013);
+    var myOptions = {
+      zoom: 15,
+      center: position,
+      mapTypeId: google.maps.MapTypeId.ROADMAP
+    };
+    var map = new google.maps.Map(
+        document.getElementById("map_canvas"),
+        myOptions);
+ 
+    var marker = new google.maps.Marker({
+        position: position,
+        map: map,
+        title:"This is the place."
+    });  
+ 
+    var contentString = '<strong>KUNAL ARTS STUDIO</strong> <BR>Basement Shraddha Simran Park,<br>Patil Lane No. 3, B/H McDonalds,<br>College Road, Nashik -422 007.<br>Maharashtra.';
+    var infowindow = new google.maps.InfoWindow({
+        content: contentString
+    });
+ 
+    google.maps.event.addListener(marker, 'click', function() {
+      infowindow.open(map,marker);
+    });
+ 
+  }
+google.maps.event.addDomListener(window, 'load', initialize);
+</script>
         <script type="text/javascript">
 		$(document).ready(function() 
 		{
@@ -90,12 +90,7 @@ $row_show=mysql_fetch_array($show_res);
 		location.href=href;
 		};</script>
 
-        
-<script type="text/javascript" charset="UTF-8">
-    $(function() {
-        $("#anim").addClass("animation");
-    });
-</script>
+ 
 
 
 </style>
@@ -161,6 +156,14 @@ span ul li.facebook
 	margin-left:-50px;
 	
 }
+#map_canvas
+{
+	color:#000;
+	border:2px solid #FFF;
+	margin-top:40px;
+	margin-left:50px;
+}
+
 </style>
 
 <script type="text/javascript">
@@ -191,10 +194,9 @@ $('div.background img').fadeIn(3000); // IE tweak
 </script>
 </head>
 
-</script>
+
 <body oncontextmenu="return false;">
 <div class="background">
-
 <img src="images/album/aa.jpg" class="st_preview"/> 
 <img src="images/album/bb.jpg" class="st_preview"/> 
 <img src="images/album/cc.jpg" class="st_preview"/>
@@ -297,15 +299,11 @@ $('div.background img').fadeIn(3000); // IE tweak
     <div class="content">
       <div class="port">
         <div class="close"><a href="#!/team"><img src="images/closeIcon.png" alt="" class="close"></a></div>
-        <div class="heading">Team At Kunal Arts</div>
-        <div class="tboutimg"><img src=""></div>
-        <div class="theading">Kunal Arts</div>
-        <div class="tpara">KUNAL ARTS was co-founded by two passionate photojournalists with a vision to revolutionize wedding photography, 			                  Praful Mehta & Abhishake saw an opportunity to leverage his background in photojournalism, direct-to-consumer marketing and technology. </div>
- 		<div class="tpara2">KUNAL ARTS was co-founded by two passionate photojournalists with a vision to revolutionize wedding photography, 			                  Praful Mehta & Abhishake saw an opportunity to leverage his background in photojournalism, direct-to-consumer marketing and technology. </div>
-        <div class="theading2">Kunal Arts</div>
- 		<div class="tpara3">KUNAL ARTS was co-founded by two passionate photojournalists with a vision to revolutionize wedding photography, 			                  Praful Mehta & Abhishake saw an opportunity to leverage his background in photojournalism, direct-to-consumer marketing and technology. </div>
-         
- 		 <div class="tpara2">KUNAL ARTS was co-founded by two passionate photojournalists with a vision to revolutionize wedding photography, 			                  Praful Mehta & Abhishake saw an opportunity to leverage his background in photojournalism, direct-to-consumer marketing and technology. </div>
+        <div class="heading">Our Location</div>
+        <div class="map">
+        <div id="map_canvas" style="width:650px; height:420px;></div>
+        <div class="footer">
+        </div>
       </div>
     </div>
   </div>
@@ -348,10 +346,10 @@ $('div.background img').fadeIn(3000); // IE tweak
          <span class="reference">
              <div>
              <ul id="menu" class="main">
-                <li><a class="topmenu" href="home.php" title="First example">Home</a></li>
+                <li><a class="topmenu" href="intro.php" title="First example">Home</a></li>
                 <li><a class="topmenu" id="link-about" href="#about">About Us</a></li>
-                <li><a class="topmenu" id="link-portfolio" href="#portfolio" >Portfolio</a></li>
-                <li><a class="topmenu" href="painting.php" >Painting</a></li>
+                <li><a class="topmenu" id="link-portfolio" href="#portfolio">Portfolio</a></li>
+                <li><a class="topmenu" id="link-team" href="#team">Location</a></li>
                 <li><a class="topmenu" id="link-about" href="#contact">Contact</a></li>
             </ul>
             </div>
@@ -468,6 +466,10 @@ $('div.background img').fadeIn(3000); // IE tweak
 				}
             });
         </script>
-        <!-- The JavaScript -->
+<audio autoplay="autoplay" loop="loop">
+<source src="all.ogg" type="audio/ogg">
+</audio>
+<embed src="all.mp3" autostart="true" loop="true" width="0" height="0"></embed>
+<noembed><bgsound src="all.mp3" loop="5"></noembed>        <!-- The JavaScript -->
 </body>
 </html>

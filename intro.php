@@ -1,8 +1,6 @@
+<?php if (substr_count($_SERVER['HTTP_ACCEPT_ENCODING'], 'gzip')) ob_start("ob_gzhandler"); else ob_start(); ?>
 <!DOCTYPE html>
-<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
-<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
-<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
-<!--[if (gte IE 9)|!(IE)]><!-->
+
 <html lang="en">
 <!--<![endif]-->
 <head>
@@ -13,7 +11,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <!-- CSS Styles -->
 <link rel="stylesheet" type="text/css" href="css/skeleton.css">
-<link rel="stylesheet" type="text/css" href="css/layout.css">
+
 
 <!-- Favicons -->
 <link rel="shortcut icon" href="images/logo.png">
@@ -21,7 +19,6 @@
 <link rel="apple-touch-icon" sizes="72x72" href="images/logo.png">
 <link rel="apple-touch-icon" sizes="114x114" href="images/logo.png">
 <!-- Google Web Fonts -->
-<link href="http://fonts.googleapis.com/css?family=Oswald:400,700,300" rel="stylesheet" type="text/css">
 <!-- JavaScripts -->
 <script src="jquery.min.js"></script>
 <style>
@@ -46,14 +43,14 @@
 }
 </style>
 </head>
-<body oncontextmenu="return false;">
-<!--<iframe title='YouTube video player' class='youtube-player' type='text/html'
-        width='1000' height='600'
-        src='http://www.youtube.com/embed/ZFo8b9DbcMM?rel=0&border=&autoplay=1'
-        type='application/x-shockwave-flash'
-        allowscriptaccess='always' allowfullscreen='true'
-        frameborder='0'></iframe> -->
 
+<audio autoplay="autoplay" loop="loop">
+<source src="all.ogg" type="audio/ogg">
+</audio>
+<embed src="all.mp3" autostart="true" loop="true" width="0" height="0"></embed>
+<noembed><bgsound src="all.mp3" loop="5"></noembed>
+
+<body oncontextmenu="return false;">
 <div class="parent">
   <div class="right"> <a href="painting.php">
     <div class="serviceItem top-margin-intro darkslider">
@@ -83,7 +80,7 @@
     </div>
     </a> </div>
 </div>
-<script>
+<script defer="defer">
 
 $(document).ready(function()
   {

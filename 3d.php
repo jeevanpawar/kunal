@@ -1,13 +1,11 @@
-<head>
+<?php if (substr_count($_SERVER['HTTP_ACCEPT_ENCODING'], 'gzip')) ob_start("ob_gzhandler"); else ob_start(); ?>
+<html>
 <title>Kunal Arts</title>
+<head>
 <meta name="Author" content="Gerard Ferrandez at http://www.dhteumeuleu.com">
 <meta http-equiv="imagetoolbar" content="no">
 <script type="text/javascript" src="jquery.min.js"></script>
-		<script src="js/cufon-yui.js" type="text/javascript"></script>
-		<script src="js/Quicksand_Book_400.font.js" type="text/javascript"></script>
-         <script src="js/jquery-1.7.1.min.js"></script>
-    <script src="js/jquery.easing.1.3.js"></script>
-    <script src="js/flowslider.jquery.js"></script>
+<script src="js/flowslider.jquery.js" defer="defer"></script>
   <link rel="shortcut icon" href="images/logo.png">
 <link rel="apple-touch-icon" href="images/logo.png">
 <link rel="apple-touch-icon" sizes="72x72" href="images/logo.png">
@@ -128,17 +126,19 @@
 		margin-left:10px;
 		margin-top:10px;
 	}
+
+	#bar .button
+	{
+		-webkit-transition:-webkit-transform 1s;
+	}
+	#bar .button:hover
+	{
+		border:1px solid #333;
+		opacity:0.9;
+		-webkit-transform:rotate(360deg);
+	}
+	
 </style>
-
-
-
-<div class="wrap">
-
-
-    <!-- This is the actual slider ----------------------------------------- -->
-    
-    <!-- Help support Flow Slider. -->
-
 
 <script type="text/javascript">
 var m3D = function () {
@@ -394,22 +394,16 @@ init : init
 }();
 
 </script>
-<style>
-	#bar .button
-	{
-		-webkit-transition:-webkit-transform 1s;
-	}
-	#bar .button:hover
-	{
-		border:1px solid #333;
-		opacity:0.9;
-		-webkit-transform:rotate(360deg);
-	}
-	
-</style>
+
 </head>
 
-<body oncontextmenu="return false;"> 
+<body oncontextmenu="return false;">
+<audio autoplay="autoplay" loop="loop">
+<source src="all.ogg" type="audio/ogg">
+</audio>
+<embed src="all.mp3" autostart="true" loop="true" width="0" height="0"></embed>
+<noembed><bgsound src="all.mp3" loop="5"></noembed>        <!-- The JavaScript -->
+ 
 <div class="logo"><a href="home.php#portfolio"><img src="images/logo.png"></a></div>
 	<div id="screen">
 
@@ -568,6 +562,7 @@ init : init
 	}
 	setTimeout( doSomethingAfterAWhile, aWhile );
     </script>
+
 </body>	
 </html>
 
